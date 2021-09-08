@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="729dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/Usuario"
+            android:layout_width="332dp"
+            android:layout_height="wrap_content"
+            android:height="48dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/Usuario"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            tools:ignore="TextContrastCheck" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="332dp"
+            android:layout_height="48dp"
+            android:height="45dp"
+            android:ems="10"
+            android:hint="@string/Contrasena"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="TextContrastCheck" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/BTNingresa"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:onClick="enviarDatos"
+            android:text="@string/Ingresar" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ActividadDOS</string>
+
+    <string name="Usuario">Nombre de usuario</string>
+
+    <string name="Contrasena">Contraseña</string>
+
+    <string name="Ingresar">Ingresar</string>
+
+</resources>
